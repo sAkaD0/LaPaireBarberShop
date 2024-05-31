@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaPaire Barbershop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+    <div></div>
+    <div>
+        <aside>
+            <div id="navBar">
+                <img src="img/petitLogo.svg" alt="logo" id="petitLogo">
+                <nav>
+                    <ul>
+                        <li><a href="#Home" class="navItem">Home</a></li>
+                        <li><a href="#Apropos" class="navItem">A propos</a></li>
+                        <li><a href="#Services" class="navItem">Services</a></li>
+                        <li><a href="#Localisation" class="navItem">Localisation</a></li>
+                        <li><a href="#Contact" class="navItem">Contacts</a></li>
+                    </ul>
+                </nav>
+                <img src="img/moon.svg" id="night">
+            </div>
+        </aside>
+
+        <main>
+            <article id="Home">
+                <div>
+                    <a href="https://www.instagram.com/lapaire.barbershop/" target="_blank" class="rotateLeft"><svg
+                            class="rotateLeft" width="20px" height="20px" viewBox="0 0 256 256" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid">
+                            <g>
+                                <path
+                                    d="M127.999746,23.06353 C162.177385,23.06353 166.225393,23.1936027 179.722476,23.8094161 C192.20235,24.3789926 198.979853,26.4642218 203.490736,28.2166477 C209.464938,30.5386501 213.729395,33.3128586 218.208268,37.7917319 C222.687141,42.2706052 225.46135,46.5350617 227.782844,52.5092638 C229.535778,57.0201472 231.621007,63.7976504 232.190584,76.277016 C232.806397,89.7746075 232.93647,93.8226147 232.93647,128.000254 C232.93647,162.177893 232.806397,166.225901 232.190584,179.722984 C231.621007,192.202858 229.535778,198.980361 227.782844,203.491244 C225.46135,209.465446 222.687141,213.729903 218.208268,218.208776 C213.729395,222.687649 209.464938,225.461858 203.490736,227.783352 C198.979853,229.536286 192.20235,231.621516 179.722476,232.191092 C166.227425,232.806905 162.179418,232.936978 127.999746,232.936978 C93.8200742,232.936978 89.772067,232.806905 76.277016,232.191092 C63.7971424,231.621516 57.0196391,229.536286 52.5092638,227.783352 C46.5345536,225.461858 42.2700971,222.687649 37.7912238,218.208776 C33.3123505,213.729903 30.538142,209.465446 28.2166477,203.491244 C26.4637138,198.980361 24.3784845,192.202858 23.808908,179.723492 C23.1930946,166.225901 23.0630219,162.177893 23.0630219,128.000254 C23.0630219,93.8226147 23.1930946,89.7746075 23.808908,76.2775241 C24.3784845,63.7976504 26.4637138,57.0201472 28.2166477,52.5092638 C30.538142,46.5350617 33.3123505,42.2706052 37.7912238,37.7917319 C42.2700971,33.3128586 46.5345536,30.5386501 52.5092638,28.2166477 C57.0196391,26.4642218 63.7971424,24.3789926 76.2765079,23.8094161 C89.7740994,23.1936027 93.8221066,23.06353 127.999746,23.06353 M127.999746,0 C93.2367791,0 88.8783247,0.147348072 75.2257637,0.770274749 C61.601148,1.39218523 52.2968794,3.55566141 44.1546281,6.72008828 C35.7374966,9.99121548 28.5992446,14.3679613 21.4833489,21.483857 C14.3674532,28.5997527 9.99070739,35.7380046 6.71958019,44.1551362 C3.55515331,52.2973875 1.39167714,61.6016561 0.769766653,75.2262718 C0.146839975,88.8783247 0,93.2372872 0,128.000254 C0,162.763221 0.146839975,167.122183 0.769766653,180.774236 C1.39167714,194.398852 3.55515331,203.703121 6.71958019,211.845372 C9.99070739,220.261995 14.3674532,227.400755 21.4833489,234.516651 C28.5992446,241.632547 35.7374966,246.009293 44.1546281,249.28042 C52.2968794,252.444847 61.601148,254.608323 75.2257637,255.230233 C88.8783247,255.85316 93.2367791,256 127.999746,256 C162.762713,256 167.121675,255.85316 180.773728,255.230233 C194.398344,254.608323 203.702613,252.444847 211.844864,249.28042 C220.261995,246.009293 227.400247,241.632547 234.516143,234.516651 C241.632039,227.400755 246.008785,220.262503 249.279912,211.845372 C252.444339,203.703121 254.607815,194.398852 255.229725,180.774236 C255.852652,167.122183 256,162.763221 256,128.000254 C256,93.2372872 255.852652,88.8783247 255.229725,75.2262718 C254.607815,61.6016561 252.444339,52.2973875 249.279912,44.1551362 C246.008785,35.7380046 241.632039,28.5997527 234.516143,21.483857 C227.400247,14.3679613 220.261995,9.99121548 211.844864,6.72008828 C203.702613,3.55566141 194.398344,1.39218523 180.773728,0.770274749 C167.121675,0.147348072 162.762713,0 127.999746,0 Z M127.999746,62.2703115 C91.698262,62.2703115 62.2698034,91.69877 62.2698034,128.000254 C62.2698034,164.301738 91.698262,193.730197 127.999746,193.730197 C164.30123,193.730197 193.729689,164.301738 193.729689,128.000254 C193.729689,91.69877 164.30123,62.2703115 127.999746,62.2703115 Z M127.999746,170.667175 C104.435741,170.667175 85.3328252,151.564259 85.3328252,128.000254 C85.3328252,104.436249 104.435741,85.3333333 127.999746,85.3333333 C151.563751,85.3333333 170.666667,104.436249 170.666667,128.000254 C170.666667,151.564259 151.563751,170.667175 127.999746,170.667175 Z M211.686338,59.6734287 C211.686338,68.1566129 204.809755,75.0337031 196.326571,75.0337031 C187.843387,75.0337031 180.966297,68.1566129 180.966297,59.6734287 C180.966297,51.1902445 187.843387,44.3136624 196.326571,44.3136624 C204.809755,44.3136624 211.686338,51.1902445 211.686338,59.6734287 Z"
+                                    fill="#5e5e5e"></path>
+                            </g>
+                        </svg></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556224563142" target="_blank"
+                        class="rotateLeftFb"><svg class="rotateLeftFb" xmlns="http://www.w3.org/2000/svg" fill="#5e5e5e"
+                            width="20px" height="20px" viewBox="0 0 24 24">
+                            <path
+                                d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                        </svg></a>
+                    <div class="lineLeft"></div>
+                </div>
+                <img src="img/logo fini 1.svg" alt="logo" id="logo">
+                <div>
+                    <p class="rotateRight">Scroll</p>
+                    <div class="lineRight"></div>
+                </div>
+            </article>
+
+            <article id="Apropos">
+                <h2 class="apparition , gauche">Qui sommes-nous ?</h2>
+                <p class="apparition">En tant que barbershop mobile basé en Belgique, nous privilégions le contact
+                    humain en nous installant en des points stratégiques, au plus près de nos clients. Notre concept
+                    unique nous permet d'offrir des services de coupe de cheveux et de soins de la barbe dans des
+                    endroits facilement accessibles pour notre clientèle. Nous croyons fermement à l'importance des
+                    échanges personnels et chaleureux, c'est pourquoi nous avons choisi cette approche pour créer des
+                    liens authentiques avec nos clients. Chaque coupe de cheveux et chaque conversation que nous
+                    partageons contribuent à renforcer ces relations, tout en soulignant notre engagement envers la
+                    qualité et la convivialité.</p>
+            </article>
+
+            <article id="Services">
+
+                <article>
+                    <div>
+                        <h3 class="apparition">Coupe de cheveux</h3>
+                        <p class="apparition">Découvrez notre expertise en matière de coupes de cheveux modernes et
+                            élégantes. Que vous recherchiez une coupe classique, une tendance actuelle ou une
+                            transformation audacieuse, nos coiffeurs qualifiés sont là pour répondre à vos besoins et
+                            vous offrir une allure impeccable.</p>
+                    </div>
+                    <div>
+                        <h3 class="apparition">Taille de barbe</h3>
+                        <p class="apparition">Offrez à votre barbe le soin qu'elle mérite avec nos services spécialisés.
+                            De la taille et du façonnage précis à l'entretien quotidien, notre équipe de barbiers
+                            expérimentés saura sublimer votre style facial pour une allure soignée et élégante qui ne
+                            passera pas inaperçue.</p>
+                    </div>
+                    <div>
+                        <h3 class="apparition">Coupe et barbe</h3>
+                        <p class="apparition">Optez pour le package ultime en matière de style avec notre service de
+                            coupe de cheveux et de barbe combiné. Laissez nos experts coordonner harmonieusement votre
+                            coupe de cheveux avec le façonnage de votre barbe pour un look parfaitement équilibré et une
+                            sensation de fraîcheur incomparable.</p>
+                    </div>
+                </article>
+                <h2 class="apparition , droite">Services</h2>
+            </article>
+
+            <article id="Localisation">
+                <h2 class="apparition , gauche">Ou nous trouver ?</h2>
+                <iframe
+                    src="https://www.google.com/maps/d/u/0/embed?mid=1Y963aQTxsQ8SgerzjGuFRM5VdCUwx6U&ehbc=2E312F&noprof=1"
+                    width="640" height="480" class="apparition"></iframe>
+            </article>
+
+            <article id="Contact">
+                <div id="listeContact">
+                    <div class="apparition">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.05 14.95L9.2 16.8C8.81 17.19 8.19 17.19 7.79 16.81C7.68 16.7 7.57 16.6 7.46 16.49C6.43 15.45 5.5 14.36 4.67 13.22C3.85 12.08 3.19 10.94 2.71 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C10.83 13.32 10.94 13.42 11.04 13.52C11.44 13.91 11.45 14.55 11.05 14.95Z"
+                                fill="#292D32" />
+                            <path
+                                d="M21.9696 18.3291C21.9696 18.6091 21.9196 18.8991 21.8196 19.1791C21.7896 19.2591 21.7596 19.3391 21.7196 19.4191C21.5496 19.7791 21.3296 20.1191 21.0396 20.4391C20.5496 20.9791 20.0096 21.3691 19.3996 21.6191C19.3896 21.6191 19.3796 21.6291 19.3696 21.6291C18.7796 21.8691 18.1396 21.9991 17.4496 21.9991C16.4296 21.9991 15.3396 21.7591 14.1896 21.2691C13.0396 20.7791 11.8896 20.1191 10.7496 19.2891C10.3596 18.9991 9.96961 18.7091 9.59961 18.3991L12.8696 15.1291C13.1496 15.3391 13.3996 15.4991 13.6096 15.6091C13.6596 15.6291 13.7196 15.6591 13.7896 15.6891C13.8696 15.7191 13.9496 15.7291 14.0396 15.7291C14.2096 15.7291 14.3396 15.6691 14.4496 15.5591L15.2096 14.8091C15.4596 14.5591 15.6996 14.3691 15.9296 14.2491C16.1596 14.1091 16.3896 14.0391 16.6396 14.0391C16.8296 14.0391 17.0296 14.0791 17.2496 14.1691C17.4696 14.2591 17.6996 14.3891 17.9496 14.5591L21.2596 16.9091C21.5196 17.0891 21.6996 17.2991 21.8096 17.5491C21.9096 17.7991 21.9696 18.0491 21.9696 18.3291Z"
+                                fill="#292D32" />
+                        </svg>
+                        <p class="apparition" style="align-items: center; justify-content: center;">0492/96.97.85</p>
+                    </div>
+                </div>
+                <h2 class="apparition, droite">Nous retrouver :</h2>
+
+
+            </article>
+            <script src="js/script.js"></script>
+    </div>
+
+
+</body>
+
+</html>

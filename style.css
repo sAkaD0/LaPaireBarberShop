@@ -1,0 +1,258 @@
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato-Regular.ttf");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+    background-color: #e6e6e6;
+
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1344px 1fr;
+    grid-column-start: 2;
+
+}
+
+#navBar {
+    display: grid;
+    grid-template-columns: 1fr 1100px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr 1100px 1fr;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: auto;
+    position: fixed;
+    background-color: #e6e6e6;
+    z-index: 99;
+}
+
+#navBar #petitLogo {
+    padding-left: 5%;
+    width: 150px;
+    height: 50px;
+
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: grid;
+    text-align: center;
+}
+
+#night {
+    justify-self: end;
+    margin-left: 25px;
+    padding: 2px;
+    align-items: center;
+    border-radius: 4px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li .navItem::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+
+}
+
+li .navItem:hover::after {
+    transform: scale(1);
+}
+
+#Home {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#Home #logo {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+.rotateRight {
+    position: absolute;
+    transform: rotate(90deg);
+    right: 20px;
+    bottom: 10%;
+    color: #5e5e5e;
+}
+
+
+.rotateLeft {
+    width: 20px !important;
+    color: #5e5e5e !important;
+    position: absolute;
+    left: 15px;
+    bottom: 15%;
+    z-index: 0;
+}
+
+.rotateLeftFb {
+    width: 20px !important;
+    color: #5e5e5e !important;
+    position: absolute;
+    left: 15px;
+    bottom: 10%;
+    z-index: 0;
+}
+
+.lineRight {
+    border-bottom: 1px solid #5e5e5e;
+    width: 40px;
+    height: 2px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 20px;
+    bottom: 5%;
+}
+
+.lineLeft {
+    border-bottom: 1px solid #5e5e5e;
+    width: 40px;
+    height: 2px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 20px;
+    bottom: 5%;
+    z-index: 0;
+}
+
+.apparition {
+    opacity: 1;
+    transition: 1s;
+}
+
+#Apropos {
+    margin-top: 25%;
+}
+
+main:not(#Home) {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+main article:not(#Home) {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+main #Services,
+main #Contact {
+    grid-template-columns: 1fr 300px !important;
+}
+
+.droite {
+    transform: rotate(90deg);
+    text-align: center;
+}
+
+.gauche {
+    transform: rotate(-90deg);
+}
+
+main #Services article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#Services article div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1344px) {
+    body {
+        grid-template-columns: 1fr 1000px 1fr;
+    }
+
+    #navBar {
+        grid-template-columns: 1fr 800px 1fr;
+    }
+
+    aside {
+        grid-template-columns: 1fr 800px 1fr;
+    }
+
+    main article:not(#Home) {
+        grid-template-columns: 200px 1fr;
+    }
+
+    main #Services,
+    main #Contact {
+        grid-template-columns: 1fr 200px !important;
+    }
+
+    main #Services article {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        grid-template-columns: 1fr 800px 1fr;
+    }
+
+    #navBar {
+        grid-template-columns: 1fr 600px 1fr;
+    }
+
+    aside {
+        grid-template-columns: 1fr 600px 1fr;
+    }
+
+    main article:not(#Home) {
+        grid-template-columns: 200px 1fr;
+    }
+
+    main #Services,
+    main #Contact {
+        grid-template-columns: 1fr 200px !important;
+    }
+
+    main #Services article {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main #Contact {
+        margin-top: 20%;
+    }
+
+}
