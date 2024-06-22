@@ -50,7 +50,7 @@ aside {
 
 nav ul {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-content: center;
     list-style: none;
@@ -97,8 +97,7 @@ li .navItem:hover::after {
 
 #Home #logo {
     width: 100%;
-    margin-top: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 40%;
 }
 
 .rotateRight {
@@ -154,35 +153,89 @@ li .navItem:hover::after {
     transition: 1s;
 }
 
-#Apropos {
+h2 {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000000a4;
+}
+
+article:not(#Home) {
     margin-top: 25%;
 }
+
+#Apropos div {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+}
+
+#Apropos div div {
+    display: grid;
+    grid-template-rows: 1fr 120px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#Apropos div p {
+    font-size: medium;
+}
+
+#Apropos div h3 {
+    text-decoration: wavy;
+    font-style: italic;
+}
+
+#listeServices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+#Localisation {
+    margin-bottom: 25%;
+}
+
+#Localisation section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+
+}
+
+#Localisation a {
+    text-align: center;
+    display: flex;
+
+}
+
 
 main:not(#Home) {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
 }
 
-main article:not(#Home) {
+/* main article:not(#Home) {
     display: grid;
     grid-template-columns: 300px 1fr;
     justify-content: center;
     align-items: center;
-}
+} */
 
-main #Services,
+/* main #Services,
 main #Contact {
     grid-template-columns: 1fr 300px !important;
-}
+} */
 
-.droite {
+/* .droite {
     transform: rotate(90deg);
     text-align: center;
 }
 
 .gauche {
     transform: rotate(-90deg);
-}
+} */
 
 main #Services article {
     display: grid;
@@ -214,10 +267,6 @@ main #Services article {
     main #Services,
     main #Contact {
         grid-template-columns: 1fr 200px !important;
-    }
-
-    main #Services article {
-        grid-template-columns: 1fr 1fr;
     }
 
 
