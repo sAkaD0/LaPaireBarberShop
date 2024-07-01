@@ -18,24 +18,24 @@
             <div id="navBar">
                 <a href="#Home"><img src="img/petitLogo.svg" alt="logo" id="petitLogo"></a>
                 <nav>
-                    <ul>
-                        <li><a href="#Home" class="navItem">Home</a></li>
-                        <li><a href="#Apropos" class="navItem">A propos</a></li>
-                        <li><a href="#Services" class="navItem">Services</a></li>
-                        <li><a href="#Localisation" class="navItem">Localisation</a></li>
-                    </ul>
+                    <a href="#Home" class="navItem">Home</a>
+                    <a href="#Apropos" class="navItem">A propos</a>
+                    <a href="#Services" class="navItem">Services</a>
+                    <a href="#Localisation" class="navItem">Localisation</a>
+                    <a href="https://calendly.com/lapairebarbershop" target="_blank" id="reservation">Réservation</a>
                 </nav>
             </div>
+            <div id="burger"></div>
         </aside>
 
         <main>
             <article id="Home">
-                <div>
-                    <a href="https://www.instagram.com/lapaire.barbershop/" target="_blank" class="rotateLeft"><img
-                            src="/img/iconmonstr-facebook-6.svg" class="rotateLeft" width="20px" height="20px"></a>
+                <div id="reseaux">
                     <a href="https://www.facebook.com/profile.php?id=61556224563142" target="_blank"
-                        class="rotateLeftFb"><img src="img/instagram-seeklogo.svg" class="rotateLeftFb" width="20px"
-                            height="20px"></a>
+                        class="rotateLeft"><img src="/img/iconmonstr-facebook-6.svg" class="rotateLeft" width="20px"
+                            height="20px" alt=""></a>
+                    <a href="https://www.instagram.com/lapaire.barbershop/" target="_blank" class="rotateLeftFb"><img
+                            src="img/instagram-seeklogo.svg" class="rotateLeftFb" width="20px" height="20px" alt=""></a>
 
                     </a>
                     <div class="lineLeft"></div>
@@ -71,8 +71,13 @@
                         qualité et la convivialité.
                     </p>
                 </div>
-
+                <figure>
+                    <img src="img/celia.jpg" alt="" width="100%">
+                    <img src="img/celia-ben.jpg" alt="" width="100%">
+                    <img src="img/ben.jpg" alt="" width="100%">
+                </figure>
             </article>
+
             <article id="Services">
                 <h2 class="apparition">Services</h2>
                 <div id="listeServices">
@@ -82,6 +87,7 @@
                             élégantes. Que vous recherchiez une coupe classique, une tendance actuelle ou une
                             transformation audacieuse, nos coiffeurs qualifiés sont là pour répondre à vos besoins et
                             vous offrir une allure impeccable.</p>
+
                     </div>
                     <div id="barbe">
                         <h3 class="apparition">Taille de barbe</h3>
@@ -89,6 +95,7 @@
                             De la taille et du façonnage précis à l'entretien quotidien, notre équipe de barbiers
                             expérimentés saura sublimer votre style facial pour une allure soignée et élégante qui ne
                             passera pas inaperçue.</p>
+
                     </div>
                     <div id="coupebarbe">
                         <h3 class="apparition">Coupe et barbe</h3>
@@ -97,23 +104,50 @@
                             coupe de cheveux avec le façonnage de votre barbe pour un look parfaitement équilibré et une
                             sensation de fraîcheur incomparable.</p>
                     </div>
+                    <div id="V.I.P">
+                        <h3 class="apparition">Service V.I.P</h3>
+                        <p class="apparition">Réservation privative du camion pour un minimum de 4 personnes. Dans une
+                            ambiance et des services sur mesure spécialement créer pour vous</p>
+                    </div>
+                    <div class="apparition prix">
+                        <p>25€</p>
+                    </div>
+                    <div class="apparition prix">
+                        <p>20€</p>
+                    </div>
+                    <div class="apparition prix">
+                        <p>40€</p>
+                    </div>
+                    <a href="https://www.instagram.com/stories/highlights/18121321708362353/" target="_blank"
+                        class="apparition">
+                        <div class="prix">
+                            <p>Voir conditions</p>
+                        </div>
+                    </a>
                 </div>
-
+                <figure class="apparition" style="margin-top: 50px;">
+                    <img src="img/coupe.jpg" alt="" width="100%">
+                    <img src="img/barbe.jpg" alt="" width="100%">
+                    <img src="img/coupe-barbe.jpg" alt="" width="100%">
+                </figure>
             </article>
 
             <article id="Localisation">
                 <h2 class="apparition , gauche">Nous retrouver</h2>
                 <section>
-                    <iframe
-                        src="https://www.google.com/maps/d/u/0/embed?mid=1Y963aQTxsQ8SgerzjGuFRM5VdCUwx6U&ehbc=2E312F&noprof=1"
-                        width="640" height="480" class="apparition"></iframe>
+                    <a href="https://www.google.com/maps/d/u/0/embed?mid=1Y963aQTxsQ8SgerzjGuFRM5VdCUwx6U&ehbc=2E312F&noprof=1"
+                        target="_blank">
+                        <iframe
+                            src="https://www.google.com/maps/d/u/0/embed?mid=1Y963aQTxsQ8SgerzjGuFRM5VdCUwx6U&ehbc=2E312F&noprof=1"
+                            width="640" height="480" class="apparition scrolloff"></iframe></a>
 
                     <div>
-                        <div class="apparition"style="display: flex;
-                        padding-top: 20px; align-items: center;" >
+                        <div class="apparition" style="display: flex;
+                        padding-top: 20px; align-items: center;">
                             <a href="
-                    https://calendly.com/lapairebarbershop" target="_blank" rel="noopener noreferrer"
-                                ><img src="img/note.svg" width="20px" height="20px"><span>Cliquez
+                    https://calendly.com/lapairebarbershop" target="_blank" rel="noopener noreferrer"><img
+                                    src="img/note.svg" width="20px" height="20px" alt=""><span
+                                    style="text-decoration: underline;">Cliquez
                                     ici
                                     pour prendre rendez-vous</span>
                             </a>
@@ -143,7 +177,21 @@
                 </section>
             </article>
             <script src="js/script.js"></script>
+        </main>
     </div>
+    <div></div>
+    <div>
+    </div>
+    <footer>
+        <div>
+            <p>LaPaire(SRL)</p>
+            <p>BE1006.467.941</p>
+            <p>Rue demoulin(LEE) 54/1 <br>6142 Fontaine-L'Evêque</p>
+            <p>lapairebarbershop@gmail.com</p>
+        </div>
+        <p>© Copyright 2024 LaPaire</p>
+    </footer>
 </body>
+
 
 </html>

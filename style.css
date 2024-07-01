@@ -48,25 +48,30 @@ aside {
 
 }
 
-nav ul {
+nav {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
     justify-content: center;
     list-style: none;
+    gap: 20px;
 }
 
-nav ul li {
+nav a {
     display: grid;
     text-align: center;
 }
 
-#night {
-    justify-self: end;
-    margin-left: 25px;
-    padding: 2px;
-    align-items: center;
-    border-radius: 4px;
+#reservation {
+    background-color: #000;
+    color: #e6e6e6;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#reservation:hover {
+    background-color: #252525;
+
 }
 
 a {
@@ -74,7 +79,7 @@ a {
     text-decoration: none;
 }
 
-li .navItem::after {
+.navItem::after {
     content: "";
     display: block;
     width: 100%;
@@ -85,7 +90,7 @@ li .navItem::after {
 
 }
 
-li .navItem:hover::after {
+.navItem:hover::after {
     transform: scale(1);
 }
 
@@ -104,7 +109,7 @@ li .navItem:hover::after {
     position: absolute;
     transform: rotate(90deg);
     right: 20px;
-    bottom: 10%;
+    bottom: 60px;
     color: #5e5e5e;
 }
 
@@ -112,18 +117,18 @@ li .navItem:hover::after {
 .rotateLeft {
     width: 20px !important;
     color: #5e5e5e !important;
-    position: absolute;
+    position: fixed;
     left: 15px;
-    bottom: 15%;
+    bottom: 50px;
     z-index: 0;
 }
 
 .rotateLeftFb {
     width: 20px !important;
     color: #5e5e5e !important;
-    position: absolute;
+    position: fixed;
     left: 15px;
-    bottom: 10%;
+    bottom: 80px;
     z-index: 0;
 }
 
@@ -134,7 +139,7 @@ li .navItem:hover::after {
     transform: rotate(90deg);
     position: absolute;
     right: 20px;
-    bottom: 5%;
+    bottom: 20px;
 }
 
 .lineLeft {
@@ -142,9 +147,9 @@ li .navItem:hover::after {
     width: 40px;
     height: 2px;
     transform: rotate(90deg);
-    position: absolute;
-    left: 20px;
-    bottom: 5%;
+    position: fixed;
+    left: 6px;
+    bottom: 20px;
     z-index: 0;
 }
 
@@ -187,12 +192,25 @@ article:not(#Home) {
 
 #listeServices {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
 }
 
+#Services a :hover {
+    background-color: #5e5e5e;
+}
+
+.prix {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #d6d5d5;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
 #Localisation {
-    margin-bottom: 25%;
+    margin-bottom: 100px;
 }
 
 #Localisation section {
@@ -206,36 +224,14 @@ article:not(#Home) {
 #Localisation a {
     text-align: center;
     display: flex;
-
 }
 
 
-main:not(#Home) {
+main {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     gap: 30px;
 }
-
-/* main article:not(#Home) {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* main #Services,
-main #Contact {
-    grid-template-columns: 1fr 300px !important;
-} */
-
-/* .droite {
-    transform: rotate(90deg);
-    text-align: center;
-}
-
-.gauche {
-    transform: rotate(-90deg);
-} */
 
 main #Services article {
     display: grid;
@@ -246,6 +242,46 @@ main #Services article {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.scrolloff {
+    pointer-events: none;
+}
+
+#burger {
+    height: 40px;
+    width: 40px;
+    background-image: url(img/menu.svg);
+    background-position: center center;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: none;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+figure img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+footer div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
 
 @media screen and (max-width: 1344px) {
     body {
@@ -274,34 +310,43 @@ main #Services article {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     body {
-        grid-template-columns: 1fr 800px 1fr;
+        grid-template-columns: 1fr;
     }
 
     #navBar {
-        grid-template-columns: 1fr 600px 1fr;
+        grid-template-columns: 1fr;
     }
 
     aside {
-        grid-template-columns: 1fr 600px 1fr;
+        grid-template-columns: 1fr 40px;
+        gap: 5px;
+        align-items: flex-start;
+        top: 0;
+        right: 0;
+        left: 0;
+        justify-content: center;
     }
 
-    main article:not(#Home) {
-        grid-template-columns: 200px 1fr;
+    nav {
+        display: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        right: 0;
+        left: 0;
     }
 
-    main #Services,
-    main #Contact {
-        grid-template-columns: 1fr 200px !important;
+    #reseaux {
+        display: none;
     }
 
-    main #Services article {
-        grid-template-columns: 1fr 1fr;
+    #burger {
+        display: block;
+        padding-top: 10px
     }
 
-    main #Contact {
-        margin-top: 20%;
-    }
+
+
 
 }

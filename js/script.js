@@ -1,6 +1,6 @@
 $(window).on('load', function () {
     $('.apparition').css('opacity', 0);
-    old = $(window).scrollTop();
+    old = 0;
     console.log(innerWidth);
 })
 $(window).scroll(function () {
@@ -18,3 +18,14 @@ $(window).scroll(function () {
 
     }
 });
+
+$('#burger').on("click", function () {
+    now = $('nav').css('display')
+    if (now == 'grid') {
+        $('nav').css('display', 'none');
+    }
+
+    else {
+        $('nav').css('display', 'grid');
+    }
+})
